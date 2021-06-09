@@ -1,0 +1,4 @@
+.leftSidebar {
+  flex: 0.3;
+  min-width: 300px;
+}

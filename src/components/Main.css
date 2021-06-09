@@ -1,0 +1,139 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5c4b1;
+  height: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.topRow > h3 {
+  font-size: 24px;
+  color: #323232;
+}
+
+.addExpense {
+  margin-top: 15px !important;
+  margin-left: 10px !important;
+  margin-bottom: 15px !important;
+  text-transform: capitalize !important;
+  background-color: #f67280 !important;
+  color: white !important;
+  font-weight: 800 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.addExpense:hover {
+  background-color: #f36472 !important;
+}
+
+.secondRow {
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: #fbeee9;
+}
+
+.rowBox_total {
+  padding-left: 10px;
+  text-align: center;
+  flex: 0.33;
+}
+
+.rowBox_total > p {
+  margin-top: 0 !important;
+  color: gray;
+}
+
+.rowBox_total > h4 {
+  margin-bottom: 10px !important;
+}
+
+.rowBox_owed {
+  padding-right: 10px;
+  flex: 0.33;
+}
+
+.rowBox_owed > p {
+  margin-top: 0 !important;
+  color: gray;
+}
+
+.rowBox_owed > h4 {
+  margin-bottom: 10px !important;
+}
+
+.rowBox > p {
+  margin-top: 0 !important;
+  color: gray;
+}
+
+.rowBox > h4 {
+  margin-bottom: 10px !important;
+}
+
+.rowBox {
+  text-align: center;
+  flex: 0.33;
+  border-right: 1px solid rgb(222, 221, 221);
+  border-left: 1px solid rgb(222, 221, 221);
+}
+
+.mainRow > h2 {
+  color: #323232;
+}
+
+.settleExpense {
+  margin-top: 25px !important;
+  margin-left: 10px !important;
+  margin-right: 20px !important;
+  margin-bottom: 15px !important;
+  text-transform: capitalize !important;
+  background-color: #c05863 !important;
+  color: white !important;
+  font-weight: 800 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  height: 30px;
+}
+
+.settleExpense:hover {
+  background-color: #8a3d45 !important;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.name > h3 {
+  color: gray;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.name > h2 {
+  color: #464444;
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-top: 25px;
+}
+
+.activeRow {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: whitesmoke;
+}
+
+.mainRow {
+  background-color: rgb(236, 217, 217);
+}

@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  background: #6c5b7b;
+}
+
+.header__left {
+  height: 80px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+.header__right {
+  display: flex;
+  padding-right: 20px;
+  margin-right: 50px;
+}
+
+.header__avatar {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.notification {
+  color: white;
+}
