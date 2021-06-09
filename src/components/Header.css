@@ -4,6 +4,9 @@
   justify-content: space-between;
   border-bottom: 1px solid whitesmoke;
   background: #6c5b7b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header__left {
