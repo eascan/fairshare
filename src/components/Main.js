@@ -1,12 +1,20 @@
 import {Button} from "@material-ui/core";
+import {useHistory} from "react-router";
+import ExpenseRow from "./ExpenseRow";
 import "./Main.css";
 
 function Main() {
+  const history = useHistory();
+
   return (
     <div className="main">
       <div className="topRow">
         <h3>Dashboard</h3>
-        <Button className="addExpense" fontSize="large">
+        <Button
+          className="addExpense"
+          fontSize="large"
+          onClick={() => history.push("/expense")}
+        >
           Add Expense
         </Button>
       </div>
@@ -26,17 +34,7 @@ function Main() {
       </div>
       <div className="mainRow">
         <h2>Active Expenses</h2>
-        <div className="allExpenses">
-          <div className="activeRow">
-            <div className="name">
-              <h2>Den Hm</h2>
-              <h3>Owes you: $500</h3>
-            </div>
-            <Button className="settleExpense" fontSize="large">
-              Settle Expense
-            </Button>
-          </div>
-        </div>
+        <ExpenseRow />
       </div>
     </div>
   );

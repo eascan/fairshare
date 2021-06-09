@@ -1,0 +1,44 @@
+.settleExpense {
+  margin-top: 25px !important;
+  margin-left: 10px !important;
+  margin-right: 20px !important;
+  margin-bottom: 15px !important;
+  text-transform: capitalize !important;
+  background-color: #c05863 !important;
+  color: white !important;
+  font-weight: 800 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  height: 30px;
+}
+
+.settleExpense:hover {
+  background-color: #8a3d45 !important;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.name > h3 {
+  color: gray;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.name > h2 {
+  color: #464444;
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-top: 25px;
+}
+
+.activeRow {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: whitesmoke;
+}
