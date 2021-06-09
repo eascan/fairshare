@@ -48,12 +48,13 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  margin-top: -200px;
+  margin-top: -250px;
   margin-left: auto;
   margin-right: auto;
   height: 400px;
   background-color: rgb(247, 219, 219);
   border-radius: 5%;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.24);
 }
 
 .expense__form > form {
@@ -62,10 +63,19 @@
   width: 50%;
 }
 
+.expense__form > form > Button {
+  background-color: #5b4d75 !important;
+}
+
 .expense__form > form > input {
   margin-bottom: 20px;
   height: 40px;
 
   border: none;
   padding-left: 10px;
+}
+
+.expense__error {
+  margin-top: 0px !important;
+  color: red;
 }

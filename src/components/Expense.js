@@ -4,6 +4,9 @@ import {Button, IconButton} from "@material-ui/core";
 import {useForm} from "react-hook-form";
 import {useHistory} from "react-router";
 
+import {db} from "../firebase";
+import firebase from "firebase";
+
 function Expense() {
   const {
     register,
@@ -14,8 +17,14 @@ function Expense() {
 
   const history = useHistory();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = (formData) => {
+    db.collection("expenses").add({
+      name: formData.name,
+      amount: formData.amount,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    });
+
+    history.push("/");
   };
 
   return (
@@ -38,7 +47,11 @@ function Expense() {
               type="text"
               {...register("name", {required: true})}
             />
-            {errors.name && <p className="expense__error">Name is required</p>}
+            {errors.name && (
+              <p style={{color: "red"}} className="expense__error">
+                Name is required
+              </p>
+            )}
             <input
               name="amount"
               placeholder="How much do they owe ($)"
