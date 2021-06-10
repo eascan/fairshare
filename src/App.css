@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.mainLoader {
+  display: flex;
+  text-align: center;
+  margin-left: 43%;
+  margin-top: 18%;
+  height: 100vh;
+  width: 100vw;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

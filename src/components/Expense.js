@@ -11,7 +11,7 @@ function Expense() {
   const {
     register,
     handleSubmit,
-    watch,
+
     formState: {errors},
   } = useForm();
 
@@ -23,7 +23,6 @@ function Expense() {
       amount: formData.amount,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
-
     history.push("/");
   };
 
